@@ -7,11 +7,11 @@ env:
     - "juice-shop.herokuapp.com/#/"
     excludePaths: []
     authentication:
-      method: "browser"
+      method: "form"
       parameters:
-        loginPageUrl: "https://juice-shop.herokuapp.com/#/login"
-        loginPageWait: 5
-        browserId: "firefox-headless"
+        loginPageUrl: ""
+        loginRequestUrl: "https://juice-shop.herokuapp.com/#/login"
+        loginRequestBody: ""
       verification:
         method: "response"
         pollFrequency: 60
