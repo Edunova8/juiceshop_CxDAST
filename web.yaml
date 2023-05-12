@@ -7,8 +7,11 @@ env:
     - "juice-shop.herokuapp.com/#/"
     excludePaths: []
     authentication:
-      method: "autodetect"
-      parameters: {}
+      method: "browser"
+      parameters:
+        loginPageUrl: "https://juice-shop.herokuapp.com/#/login"
+        loginPageWait: 5
+        browserId: "firefox-headless"
       verification:
         method: "response"
         pollFrequency: 60
@@ -20,6 +23,11 @@ env:
       parameters: {}
     technology:
       exclude: []
+    users:
+    - name: "eduardo.machado"
+      credentials:
+        password: "baby1705"
+        username: "eduardo.machado"
   parameters:
     failOnError: true
     failOnWarning: false
