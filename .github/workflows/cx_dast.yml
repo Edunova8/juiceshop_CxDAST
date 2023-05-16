@@ -12,7 +12,7 @@ jobs:
       uses: Checkmarx/dast-github-action@v1.0.3
       with:
         command: "web"
-        config: "web.yaml"
+        config: "zap_scan.yml"
         base_url: https://eu.ast.checkmarx.net/
         environment_id: "74199cad-e494-4236-9cd3-e9d000a73f06"
         
