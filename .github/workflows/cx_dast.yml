@@ -16,7 +16,7 @@ jobs:
         command: "web"
         config: "web.yaml"
         base_url: https://eu.ast.checkmarx.net/
-        environment_id: "20b97598-5f9a-4d54-b0ca-1e087d251ce6"
+        environment_id: "74199cad-e494-4236-9cd3-e9d000a73f06"
         verbose: true
         
     - name: Upload Logs
